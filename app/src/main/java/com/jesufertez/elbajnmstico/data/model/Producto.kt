@@ -1,7 +1,7 @@
-package com.jesufertez.elbajnmstico.model
+package com.jesufertez.elbajnmstico.data.model
 
 data class Producto(
-    val id: Int,
+    val id: String,
     val name:String,
     val description:String,
     val urlImage:String,
