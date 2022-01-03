@@ -5,5 +5,6 @@ data class Producto(
     val name:String,
     val description:String,
     val urlImage:String,
-    val price: Int
+    val price: Int,
+    var estado: Boolean = false
 )

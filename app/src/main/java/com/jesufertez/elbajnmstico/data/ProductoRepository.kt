@@ -6,4 +6,6 @@ class ProductoRepository (
     private val productoApi : ProductosApi)
 {
     suspend fun getProducto()= productoApi.obtenerProducto()
+
+
 }

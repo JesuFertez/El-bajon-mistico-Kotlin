@@ -6,9 +6,12 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.jesufertez.elbajnmstico.data.ProductoRepository
 import com.jesufertez.elbajnmstico.data.model.ProductosResponse
+import com.jesufertez.elbajnmstico.ui.RecyclerClickInterface
+import com.jesufertez.elbajnmstico.usecase.Calcular
 import kotlinx.coroutines.launch
 
 class ProductosViewModel(private val productoRepository: ProductoRepository): ViewModel() {
+
     private val mutableState = MutableLiveData<ProductosResponse>()
     fun state():LiveData<ProductosResponse> = mutableState
 
@@ -30,6 +33,5 @@ class ProductosViewModel(private val productoRepository: ProductoRepository): Vi
         mutableState.postValue(safeBody)
     }
     }
-
 
 }
